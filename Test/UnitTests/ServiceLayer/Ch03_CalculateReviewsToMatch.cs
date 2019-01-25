@@ -14,7 +14,7 @@ namespace test.UnitTests.ServiceLayer
         [InlineData(5)]
         [InlineData(5,1)]
         [InlineData(5, 1, 1)]
-        [InlineData(5, 1, 1)]
+        //[InlineData(5, 1, 1)]
         [InlineData(5, 1, 1, 1, 1)]
         [InlineData(5, 1, 5)]
         [InlineData(3, 4, 3)]

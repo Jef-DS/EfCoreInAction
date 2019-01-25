@@ -58,7 +58,8 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        @Html.Partial("LogModal")
+        <partial name="LogModal"/>
+        @*@Html.Partial("LogModal")*@
         <hr />
         <footer>
             <p>&copy; 2016 - EfCoreInAction</p>
