@@ -9,7 +9,8 @@
         {
             <tr>
                 <td>
-                    @Html.Partial("OneOrderPartial", order)
+                    <partial name="OneOrderPartial" model="order"/>
+                    @*@Html.Partial("OneOrderPartial", order)*@
                     
                 </td>
             </tr>

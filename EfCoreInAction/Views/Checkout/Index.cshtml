@@ -2,5 +2,5 @@
 @{
     ViewData["Title"] = "Checkout";
 }
-
-@Html.Partial("ListBasketPartial", @Model)
+<partial name="ListBasketPartial" model="@Model" />
+@*@Html.Partial("ListBasketPartial", @Model)*@
