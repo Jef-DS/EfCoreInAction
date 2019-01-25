@@ -4,7 +4,8 @@
 using System;
 using System.IO;
 using System.Linq;
-using Microsoft.Extensions.PlatformAbstractions;
+//using Microsoft.DotNet.PlatformAbstractions;
+using Microsoft.Extensions;
 
 namespace test.Helpers
 {
@@ -92,8 +93,9 @@ namespace test.Helpers
 
         public static string GetSolutionDirectory()
         {
-            var host = new ApplicationEnvironment();
-            var pathToManipulate = host.ApplicationBasePath;
+            //Changed for core 2.2
+            //var host = new ApplicationEnvironment();
+            var pathToManipulate = System.AppContext.BaseDirectory;
 
             var partToEndOn = typeof(TestFileHelpers).FullName.Split('.').First() + @"\bin\";
             var indexOfPart = pathToManipulate.IndexOf(partToEndOn, StringComparison.OrdinalIgnoreCase);
